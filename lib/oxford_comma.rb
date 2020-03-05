@@ -11,7 +11,8 @@ puts array_without_last_ele
 
 separeted_by_commas = array_without_last_ele.join(",")
 puts separeted_by_commas
-separeted_by_commas += " and #{array[array.size]}"
+separeted_by_commas += " and "
+separeted_by_commas += array[array.length - 1]
 puts separeted_by_commas
   
   
