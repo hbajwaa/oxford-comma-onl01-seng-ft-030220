@@ -5,15 +5,15 @@ def oxford_comma(array)
   return array.join(" and ") if array.length == 2
   
    
- num = array.length - 1
+ num = array.length - 2
  array_without_last_ele = array.slice(0, num)
-puts array_without_last_ele
+
 
 separeted_by_commas = array_without_last_ele.join(",")
 puts separeted_by_commas
 separeted_by_commas += " and "
 separeted_by_commas += array[array.length - 1]
-puts separeted_by_commas
+return separeted_by_commas
   
   
   
